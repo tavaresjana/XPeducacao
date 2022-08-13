@@ -1,0 +1,47 @@
+<HTML>
+    <script>
+        var carros = ["Gol", "Palio", "Uno"];
+        console.log(carros);
+        
+        var primeiroCarro= carros[0];
+        var segundoCarro= carros[1];
+        var terceiroCarro= carros[2];
+
+        console.log("primeira posição: " + primeiroCarro);
+        console.log("segunda posição: "+ segundoCarro);
+        console.log("terceira posição: "+ terceiroCarro);
+
+        //para alterar o array indice 2
+        carros[2] = "Argo";
+        console.log(carros[2]);
+
+        //para imprimir o tamanho do array
+        console.log("tamanho do array: "+ carros.length);
+
+        //para pegar o último elemento do array, nós pegamos o tamanho do array e diminuimos 1. Lembre-se o array começa em 0. na hora de imprimrir a qtd de elementos ele começa em 1. então devemos tirar um para obter o último elemento da lista
+        console.log("ultimo elemento do array: "+carros[carros.length -1]);
+
+        carros[3] = "Sandero";
+        console.log("ultimo elemento do array: "+carros[carros.length -1]);
+        
+        //para inserir na ultima posição basta usar a expressão carros[carros.length] = "novoCarro" pois assim será criado mais um número no indice e a info será armazenada
+        carros[carros.length] = "Civic";
+        console.log("ultimo elemento do array: "+carros[carros.length -1]);
+
+        //função PUSH insere elementos no fim da lista
+        carros.push("Polo");
+        console.log(carros);
+
+        //função POP remove o último elemento da lista
+        console.log(carros.pop());
+
+        //função UNSHIFT insere um elemento no inicio da lista
+        carros.unshift("Jetta");
+        console.log(carros);
+        
+        //função SHIFT remove o primeiro elemento no inicio da lista
+        // assim só remove carros.shift();
+        console.log(carros.shift()); //assim remove e mostra na tela qual foi removido
+        console.log(carros);
+    </script>
+</HTML>

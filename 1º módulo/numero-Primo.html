@@ -1,0 +1,27 @@
+<html>
+<script>
+
+    function verificaNumeroPrimo(numero) {
+        var numero, valor = 1, divisores = 0;
+        if (numero > 0) {
+            while (valor <= numero) {
+                if (numero % valor == 0) {
+                    divisores++;
+                }
+                valor++;
+            }
+            if (divisores == 2) {
+                console.log("O numero " + numero + " é primo!")
+            }
+            else {
+                console.log("O numero " + numero + " não é primo!")
+            }
+        }
+        else {
+            console.log("Valor negativo ou igual a zero")
+        }
+    }
+
+</script>
+
+</html>
